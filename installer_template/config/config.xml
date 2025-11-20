@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>serialplot</Name>
+    <Version>1.0.0</Version>
+    <Title>serialplot</Title>
+    <Publisher>USTC-yssickjgd</Publisher>
+    <StartMenuDir>serialplot</StartMenuDir>
+    <TargetDir>C:\Users\13455\Desktop\git\robowalker_serialplot\installer</TargetDir>
+</Installer>
