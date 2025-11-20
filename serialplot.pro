@@ -30,8 +30,17 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = serialplot
 TEMPLATE = app
 
-CONFIG += qwt
-# LIBS += -lqwt # enable this line if qwt pri files aren't installed
+# need to compile qwt module and copy to dirs like below
+# C:\Qt\6.10.1\mingw_64\lib, archive_files
+CONFIG(debug, debug|release) {
+    # 调试版本
+    LIBS += -L$$[QT_INSTALL_LIBS] -lqwtd
+} else {
+    # 发布版本
+    LIBS += -L$$[QT_INSTALL_LIBS] -lqwt
+}
+# C:\Qt\6.10.1\mingw_64\include\Qwt, source_code
+INCLUDEPATH += "C:\Qt\6.10.1\mingw_64\include\Qwt"
 
 DEFINES += PROGRAM_NAME="\\\"serialplot\\\""
 

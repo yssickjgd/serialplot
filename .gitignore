@@ -1,0 +1,109 @@
+# Qt 构建产物
+*.pro.user
+*.pro.user.*
+*.qmake.stash
+Makefile*
+*-Build-*
+build-*
+*.build
+*.qmlc
+*.jaml
+
+# 编译输出
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.so.*
+*.dylib
+*.a
+*.lib
+
+# Qt 特定文件
+moc_*
+qrc_*
+ui_*
+*.moc
+*.qm
+*.qrc
+*.qws
+
+# 调试文件
+*.debug
+*.pdb
+*.idb
+*.ilk
+
+# 临时文件
+*~
+*.tmp
+*.temp
+.*.swp
+.*.swo
+.DS_Store
+Thumbs.db
+
+# 平台特定
+# Windows
+*.rc
+*.res
+*.manifest
+*.exp
+*.ilk
+*.pdb
+*.obj
+*.exe
+*.dll
+
+# macOS
+*.app/
+*.dmg
+*.ds_store
+.DS_Store
+
+# Linux/Unix
+/core
+/core.*
+
+# Qt Creator 相关
+*.autosave
+*.files
+*.includes
+*.config
+.cproject
+.project
+.settings/
+
+# 编译目录
+release/
+debug/
+build/
+*.build/
+*.prl
+
+# CMake (如果使用)
+CMakeLists.txt.user*
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!*.cmake.in
+
+# 资源文件（如果不想跟踪编译后的资源）
+*.qrc.depends
+
+# 日志文件
+*.log
+
+# 预编译头文件
+*.gch
+*.pch
+
+# 其他IDE文件
+*.sln
+*.vcxproj*
+*.vcproj*
+*.cbp
+*.workspace
